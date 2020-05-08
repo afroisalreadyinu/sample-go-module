@@ -5,10 +5,16 @@
 package main
 
 import (
+	"github.com/afroisalreadyinu/gowsay"
 	"github.com/fatih/color"
 	"myprinter/pathfinder"
 )
 
 func main() {
-	color.Blue(pathfinder.Find())
+	path := pathfinder.Find()
+	message, err := gowsay.MakeCow(path, gowsay.Mooptions{})
+	if err != nil {
+		message = path
+	}
+	color.Blue(message)
 }
