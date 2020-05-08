@@ -1,0 +1,2 @@
+This is a very simple Go module that is used for demo purposes in an upcoming
+blog post.
