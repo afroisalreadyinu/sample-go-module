@@ -1,7 +1,11 @@
 package pathfinder_test
 
-import "testing"
+import (
+	"github.com/stretchr/testify/assert"
+	"myprinter/pathfinder"
+	"testing"
+)
 
 func TestFind(t *testing.T) {
-	t.Fail()
+	assert.NotEqual(t, "", pathfinder.Find())
 }
