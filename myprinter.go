@@ -5,9 +5,10 @@
 package main
 
 import (
+	"myprinter/pathfinder"
+
 	"github.com/afroisalreadyinu/gowsay"
 	"github.com/fatih/color"
-	"myprinter/pathfinder"
 )
 
 func main() {
